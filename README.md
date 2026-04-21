@@ -52,7 +52,7 @@ Analysis reveals that transaction performance is highly unequal across channels,
 - **Platinum and Gold customers represent ~47% of the customer base but drive the majority of high-value transactions**, indicating that customer tier is a reliable proxy for revenue contribution.
 - **Bulk transaction patterns reveal that large-value transactions (>₹50,000) follow predictable customer and channel profiles**, enabling proactive risk management and targeted servicing.
 
-![Power BI Dashboard](<img width="1280" height="796" alt="Screenshot 2026-04-21 124210" src="https://github.com/user-attachments/assets/eb32b793-e97f-4894-a8e2-a555ff1b0a76" />)
+<img width="1281" height="790" alt="Screenshot 2026-04-21 125847" src="https://github.com/user-attachments/assets/20c9b59d-9e1f-4f09-9f03-0af3c609df18" />
 
 ---
 
@@ -77,10 +77,12 @@ The ETL pipeline applies 6 transformation checks before loading data into produc
 
 Customers are segmented into four tiers based on cumulative successful transaction value:
 
-- **Platinum** — Total spend > ₹5,00,000
-- **Gold** — Total spend > ₹1,00,000
-- **Silver** — Total spend > ₹50,000
+- **Platinum** — Total spend > ₹25,00,000
+- **Gold** — Total spend > ₹20,00,000
+- **Silver** — Total spend > ₹15,00,000
 - **Standard** — All remaining customers
+
+<img width="279" height="439" alt="Screenshot 2026-04-21 125735" src="https://github.com/user-attachments/assets/aaa647e3-7ca4-400f-ad1e-9433bcc1b88b" />
 
 This segmentation enables targeted retention, upsell, and risk strategies per tier.
 
@@ -90,17 +92,23 @@ This segmentation enables targeted retention, upsell, and risk strategies per ti
 
 Customers with transaction failure rates exceeding defined thresholds are flagged automatically by the pipeline:
 
-- **HIGH RISK** — Failure rate > 40%
-- **MEDIUM RISK** — Failure rate > 20%
-- **LOW RISK** — Failure rate ≤ 20%
+- **HIGH RISK** — Failure rate > 28%
+- **MEDIUM RISK** — Failure rate > 18%
+- **LOW RISK** — Failure rate ≤ 18%
 
 These flags surface directly in the Power BI Risk Dashboard for immediate operational review.
+
+<img width="1276" height="789" alt="Screenshot 2026-04-21 130403" src="https://github.com/user-attachments/assets/65e15906-0176-40ed-a2a4-1e585219e318" />
 
 ---
 
 ### Channel Performance Analysis
 
 Ranking channels by transaction volume and failure rate identifies where operational investment is most needed. Online and Mobile channels lead in volume but carry different failure rate profiles compared to ATM and Branch channels, highlighting distinct risk exposures per channel type.
+
+<img width="686" height="326" alt="Screenshot 2026-04-21 130916" src="https://github.com/user-attachments/assets/bd0515d6-5424-46ec-836c-71a119cfb2dc" />
+<br>
+<img width="686" height="326" alt="Screenshot 2026-04-21 131745" src="https://github.com/user-attachments/assets/3e4251b5-89b2-4bb9-8c99-84d12a113df2" />
 
 ---
 
@@ -127,7 +135,6 @@ Ranking channels by transaction volume and failure rate identifies where operati
 
 | File | Description |
 |---|---|
-| `scripts/generate_data.py` | Generates 25,500 synthetic banking transaction records |
 | `scripts/extract.py` | Reads raw CSV and loads into MySQL staging table |
 | `scripts/transform.py` | Applies 6-step data cleaning and enrichment |
 | `scripts/load.py` | Loads clean data into production table with audit logging |
@@ -138,7 +145,7 @@ Ranking channels by transaction volume and failure rate identifies where operati
 | `config.py` | Database connection configuration |
 
 ---
-
+![extract.py]("Python/scripts/extract.py")
 ## Tech Stack
 
 | Layer | Technology |
