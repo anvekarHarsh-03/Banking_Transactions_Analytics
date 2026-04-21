@@ -145,7 +145,7 @@ Ranking channels by transaction volume and failure rate identifies where operati
 | `config.py` | Database connection configuration |
 
 ---
-![extract.py]("Python/scripts/extract.py")
+[extract.py](Python/scripts/extract.py)
 ## Tech Stack
 
 | Layer | Technology |
