@@ -52,7 +52,7 @@ Analysis reveals that transaction performance is highly unequal across channels,
 - **Platinum and Gold customers represent ~47% of the customer base but drive the majority of high-value transactions**, indicating that customer tier is a reliable proxy for revenue contribution.
 - **Bulk transaction patterns reveal that large-value transactions (>₹50,000) follow predictable customer and channel profiles**, enabling proactive risk management and targeted servicing.
 
-![Power BI Dashboard](https://github.com/user-attachments/assets/1b68ca8d-d46c-409a-b5ae-d609aaa2d677)
+![Power BI Dashboard](<img width="1280" height="796" alt="Screenshot 2026-04-21 124210" src="https://github.com/user-attachments/assets/eb32b793-e97f-4894-a8e2-a555ff1b0a76" />)
 
 ---
 
