@@ -135,17 +135,17 @@ Ranking channels by transaction volume and failure rate identifies where operati
 
 | File | Description |
 |---|---|
-| `scripts/extract.py` | Reads raw CSV and loads into MySQL staging table |
-| `scripts/transform.py` | Applies 6-step data cleaning and enrichment |
-| `scripts/load.py` | Loads clean data into production table with audit logging |
-| `main.py` | Orchestrates the full ETL pipeline end-to-end |
-| `sql/create_tables.sql` | Creates staging, production, and audit log tables |
-| `sql/analysis_queries.sql` | 5 analytical SQL views for Power BI |
+| [extract.py](Python/scripts/extract.py) | Reads raw CSV and loads into MySQL staging table |
+| [transform.py](Python/scripts/transform.py) | Applies 6-step data cleaning and enrichment |
+| [load.py](Python/scripts/load.py) | Loads clean data into production table with audit logging |
+| `[main.py](Python/main.py) | Orchestrates the full ETL pipeline end-to-end |
+| [create_tables.sql](sql/create_tables.sql) | Creates staging, production, and audit log tables |
+| [analysis_queries](sql/analysis_queries.sql) | 5 analytical SQL views for Power BI |
 | `Banking_ETL_Dashboard.pbix` | Power BI dashboard (Executive Overview, Risk, Pipeline Health) |
-| `config.py` | Database connection configuration |
+| [config.py](Python/config.py) | Database connection configuration |
 
 ---
-[extract.py](Python/scripts/extract.py)
+
 ## Tech Stack
 
 | Layer | Technology |
