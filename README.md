@@ -142,7 +142,7 @@ Ranking channels by transaction volume and failure rate identifies where operati
 | [create_tables.sql](sql/create_tables.sql) | Creates staging, production, and audit log tables |
 | [analysis_queries](sql/analysis_queries.sql) | 5 analytical SQL views for Power BI |
 | [PowerBI Dashboard](dashboard/dashboard.pbix) | Power BI dashboard (Executive Overview, Risk, Pipeline Health) |
-| [Executive PPT Deck](PPT-Deck/Executive-Deck.pdf) | Database connection configuration |
+| [Executive PPT Deck](PPT%20Deck/Executive%20Deck.pdf) | Executive Summary of the Whole Project |
 | [config.py](Python/config.py) | Database connection configuration |
 
 ---
