@@ -138,10 +138,11 @@ Ranking channels by transaction volume and failure rate identifies where operati
 | [extract.py](Python/scripts/extract.py) | Reads raw CSV and loads into MySQL staging table |
 | [transform.py](Python/scripts/transform.py) | Applies 6-step data cleaning and enrichment |
 | [load.py](Python/scripts/load.py) | Loads clean data into production table with audit logging |
-| `[main.py](Python/main.py) | Orchestrates the full ETL pipeline end-to-end |
+| [main.py](Python/main.py) | Orchestrates the full ETL pipeline end-to-end |
 | [create_tables.sql](sql/create_tables.sql) | Creates staging, production, and audit log tables |
 | [analysis_queries](sql/analysis_queries.sql) | 5 analytical SQL views for Power BI |
 | [PowerBI Dashboard](dashboard/dashboard.pbix) | Power BI dashboard (Executive Overview, Risk, Pipeline Health) |
+| [Executive PPT Deck](PPT-Deck/Executive-Deck.pdf) | Database connection configuration |
 | [config.py](Python/config.py) | Database connection configuration |
 
 ---
