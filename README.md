@@ -141,7 +141,7 @@ Ranking channels by transaction volume and failure rate identifies where operati
 | `[main.py](Python/main.py) | Orchestrates the full ETL pipeline end-to-end |
 | [create_tables.sql](sql/create_tables.sql) | Creates staging, production, and audit log tables |
 | [analysis_queries](sql/analysis_queries.sql) | 5 analytical SQL views for Power BI |
-| `Banking_ETL_Dashboard.pbix` | Power BI dashboard (Executive Overview, Risk, Pipeline Health) |
+| [PowerBI Dashboard](dashboard/dashboard.pbix) | Power BI dashboard (Executive Overview, Risk, Pipeline Health) |
 | [config.py](Python/config.py) | Database connection configuration |
 
 ---
@@ -150,7 +150,6 @@ Ranking channels by transaction volume and failure rate identifies where operati
 
 | Layer | Technology |
 |---|---|
-| Data Generation | Python (pandas, numpy, uuid) |
 | ETL Pipeline | Python (pandas, mysql-connector) |
 | Database | MySQL 8.0 |
 | SQL Analytics | MySQL Views (5 analytical views) |
